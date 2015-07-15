@@ -1,0 +1,4 @@
+cg ()
+{ 
+	g++ "$@" -std=c++11 -lGL -lGLU -lglut;
+}

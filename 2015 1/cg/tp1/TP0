@@ -1,0 +1,33 @@
+INSTALAR
+========
+Assumindo que você esteja usando uma distro baseado no Ubuntu.
+
+1) sudo apt-get update 
+
+-Isto vai atualizar a base de dados do apt para os mais recentes pacotes disponíveis.
+
+2) sudo apt-get install build-essential
+
+-Isto instala um metapacote que reúne diversas aplicações para compilar/instalar aplicações com base no seu código fonte
+
+3) sudo apt-get install freeglut3-dev
+
+-Isto instala as bibliotecas de desenvolvimento and cabeçalhos para o freeglut.
+
+Pronto! A instalação já está concluída. 
+
+
+
+COMPILAR
+========
+
+Para compilar o seu programa é necessário inserir alguns argumentos para que o compilador encontre as bibliotecas.Se você não inserir, não será possível encontrar as bibliotecas e você receberá erros de referência indefinidas.
+
+	g++ nomeDoCodigo.cpp -lGL -lGLU -lglut;
+
+
+
+REFERÊNCIA
+----------
+
+http://ubuntuforums.org/showthread.php?t=345177

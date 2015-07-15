@@ -1,0 +1,9 @@
+E (4): Uva, Maca, Banana, Pera;
+A (2): comer, guardar;
+T (4):
+    Uva    -> { Uva,  Pera },
+    Maca   -> { Pera, Maca },
+    Banana -> { Uva,  Pera },
+    Pera   -> { Maca, Banana };
+I (1): Uva;
+F (1): Uva;

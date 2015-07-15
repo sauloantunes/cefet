@@ -1,0 +1,9 @@
+#!/bin/bash
+if [ ! -d output ]
+	then
+		mkdir output
+		g++ -std=c++11 redutor.cpp -o redutor;
+fi
+./redutor -o ./output/orig.dot -m ./output/min.dot "$@";
+dot -Tpdf -o ./output/min.pdf ./output/min.dot
+dot -Tpdf -o ./output/orig.pdf ./output/orig.dot 

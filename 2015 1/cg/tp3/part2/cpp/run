@@ -1,0 +1,6 @@
+#!/bin/bash
+
+g++ *.cpp -lSOIL -o play
+./play ./../cena-3-esferas.txt simples3;
+./play ./../cena-2-fontes-luz.txt simples2
+./play ./../cena-simples.txt simples

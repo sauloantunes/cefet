@@ -1,0 +1,26 @@
+INSTALAÇÃO
+==========
+O jogo foi feito e testado em ambiente Linux.
+Para instruções de como instalar as bibliotecas necessárias (TP0) ver o arquivo TP0.txt
+
+COMPILAÇÃO E EXECUÇÃO
+=====================
+Foi criado um makefile, então para compilar o programa basta executar pelo terminal
+    make
+
+Um executavel "game" será criado.
+
+Por fim basta executar o arquivo
+    ./game
+
+
+ADICIONAIS IMPLEMENTADOS
+========================
+
+Fase em arquivo
+    o arquivo bricksx.txt contém as posições, tamanhos e cores dos tijolos de cada fase.
+
+Existem mais de uma fase no jogo. E podem ser facilmente criadas mais fases através de arquivos e simples configurações.
+O jogador possui vidas.
+A velocidade com que a bola sai da colisão da barra varia com a velocidade da barra na hora da colisão.
+A barra possui um rastro indicando sua velocidade.

@@ -1,0 +1,30 @@
+README
+======
+
+Foi criado uma script para facilitar os testes.
+
+Basta executar:
+	
+	./afd <nomeDoArquivo>
+
+Exemplos:
+	
+	./afd divisao6.afd
+	./afd ex1.afd
+
+O código será compilado, caso seja a primeira execução.
+
+Será mostrado a resposta se o AFD já é mínimo.
+
+E serão gerados os arquivos .dot e .pdf na pasta output:
+
+		orig.dot		# Arquivo .dot do AFD original
+		min.dot			# Arquivo .dot do AFD minimizado
+
+		orig.pdf		# Arquivo .pdf do AFD original
+		min.pdf			# Arquivo .pdf do AFD minimizado
+
+
+Caso não seja desejado utilizar o script, o código funcionará com os parâmetros propostos no trabalho.
+
+*Compilar utilizando -std=c++11

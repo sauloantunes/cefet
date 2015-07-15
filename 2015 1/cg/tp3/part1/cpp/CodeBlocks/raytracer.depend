@@ -1,0 +1,60 @@
+# depslib dependency file v1.0
+1434300483 source:c:\users\flavio\documents\github\raytracer\cpp\output.c
+	"output.h"
+	<stdio.h>
+	<SOIL.h>
+
+1434231375 c:\users\flavio\documents\github\raytracer\cpp\output.h
+
+1434323070 source:c:\users\flavio\documents\github\raytracer\cpp\raytracer.cpp
+	"raytracer.h"
+	"vector.h"
+	<limits>
+	<iostream>
+
+1431525870 c:\users\flavio\documents\github\raytracer\cpp\raytracer.h
+	"scene.h"
+	"ray.h"
+
+1434307966 c:\users\flavio\documents\github\raytracer\cpp\scene.h
+	<string>
+	"vector.h"
+	"ray.h"
+
+1434306885 c:\users\flavio\documents\github\raytracer\cpp\vector.h
+	<cmath>
+	<string>
+
+1434305985 c:\users\flavio\documents\github\raytracer\cpp\ray.h
+	"scene.h"
+
+1434308246 source:c:\users\flavio\documents\github\raytracer\cpp\scene.cpp
+	"scene.h"
+	<string>
+	<fstream>
+	<iostream>
+	<sstream>
+
+1434315287 source:c:\users\flavio\documents\github\raytracer\cpp\vector.cpp
+	"vector.h"
+	<sstream>
+
+1434303165 source:c:\users\flavio\documents\github\raytracer\cpp\vectortest.cpp
+	<assert.h>
+	<stdio.h>
+	"vector.h"
+
+1434302578 source:c:\users\flavio\documents\github\raytracer\cpp\main.cpp
+	"scene.h"
+	"raytracer.h"
+	"output.h"
+	<iostream>
+	<sstream>
+
+1434301933 source:c:\users\flavio\documents\github\raytracer\cpp\output.cpp
+	"output.h"
+	<stdio.h>
+	<SOIL.h>
+
+1215465208 c:\users\flavio\documents\github\raytracer\cpp\include\\soil.h
+
