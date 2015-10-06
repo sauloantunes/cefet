@@ -1,0 +1,44 @@
+tempo 400;
+musica "Cai Cai Balão"; faca
+  i = 1;
+  repetir (i =< 2); faca
+    tocar(G, 1)  : "Cai,";  // sol seminima
+    tocar(G, 1.) : "cai,";  // sol seminima + meia
+    tocar(F, %2) : "ba";    // fa colcheia
+    se (j =< 2); faca
+      tocar(E, 1) : "lao."; // fa seminima
+    senao
+      tocar(E, 2) : "lao";  // fa minima
+    fim
+    i = i + 1;
+  fim
+
+  tocar(G, 1) : "na";       // sol seminima
+  tocar(A, 1) : "ru";       // la seminima
+  tocar(G, 1) : "a";        // sol seminima
+  tocar(F, 1) : "do";       // fa seminima
+  tocar(E, 1) : "sa";       // mi seminima
+  tocar(D, 2) : "bao";      // re minima
+
+  pausar(1);                // intervalo
+
+  j = 1;
+  repetir (j =< 3); faca
+    tocar(D, %2) : "Nao";   // re colcheia
+    tocar(E, %2) : "cai";   // mi colcheia
+    se (j =< 2); faca
+      tocar(F, 1) : "nao.";  // fa seminima
+    senao
+      tocar(F, 2) : "nao.";  // fa minima
+    fim
+    j = j + 1;
+  fim
+
+  tocar(G, 1) : "Cai";      // sol seminima
+  tocar(A, 1) : "a";        // la seminima
+  tocar(G, 1) : "qui";      // sol seminima
+  tocar(F, 1) : "na";       // fa seminima
+  tocar(E, 1) : "mi";       // mi seminima
+  tocar(D, 1) : "nha";      // re seminima
+  tocar(C, 2) : "mao!";     // do minima
+fim
