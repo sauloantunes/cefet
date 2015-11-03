@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Termino</class>
+ <widget class="QDialog" name="Termino">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>433</width>
+    <height>237</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="mensagem">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>30</y>
+     <width>109</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Jogador X Ganhou</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ok_termino">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>80</y>
+     <width>80</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

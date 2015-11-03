@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="arrow">images/arrow.png</file>
+        <file alias="disabled">images/arrow-disabled.png</file>
+        <file alias="hover">images/arrow-hover.png</file>
+        <file alias="blue">images/blue.jpg</file>
+        <file alias="red">images/red.jpg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,1556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Lig4</class>
+ <widget class="QMainWindow" name="Lig4">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>404</width>
+    <height>541</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lig4</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: white;</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="BotaoJogar" name="botao1">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola61">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola51">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola41">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola31">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola21">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola11">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="frameShape">
+         <enum>QFrame::HLine</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label1">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="BotaoJogar" name="botao2">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola62">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola52">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola42">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola32">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola22">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola12">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="frameShape">
+         <enum>QFrame::HLine</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label2">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>2</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="BotaoJogar" name="botao3">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola63">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola53">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola43">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola33">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola23">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola13">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_3">
+        <property name="frameShape">
+         <enum>QFrame::HLine</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label3">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>3</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="BotaoJogar" name="botao4">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola64">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola54">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola44">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola34">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola24">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola14">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_4">
+        <property name="frameShape">
+         <enum>QFrame::HLine</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label4">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>4</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <widget class="BotaoJogar" name="botao5">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola65">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola55">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola45">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola35">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola25">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola15">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_5">
+        <property name="frameShape">
+         <enum>QFrame::HLine</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label5">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>5</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <item>
+       <widget class="BotaoJogar" name="botao6">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola66">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola56">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola46">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola36">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola26">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola16">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_6">
+        <property name="frameShape">
+         <enum>QFrame::HLine</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label6">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>6</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <item>
+       <widget class="BotaoJogar" name="botao7">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola67">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola57">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola47">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola37">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola27">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bola17">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_7">
+        <property name="frameShape">
+         <enum>QFrame::HLine</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label7">
+        <property name="minimumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>7</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>404</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuNovo">
+    <property name="title">
+     <string>Jogo</string>
+    </property>
+    <addaction name="actionNovo"/>
+    <addaction name="actionSair"/>
+   </widget>
+   <widget class="QMenu" name="menuAjuda">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+    <addaction name="actionSobre"/>
+   </widget>
+   <addaction name="menuNovo"/>
+   <addaction name="menuAjuda"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSobre">
+   <property name="text">
+    <string>Sobre</string>
+   </property>
+  </action>
+  <action name="actionNovo">
+   <property name="text">
+    <string>Novo</string>
+   </property>
+  </action>
+  <action name="actionSair">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BotaoJogar</class>
+   <extends>QPushButton</extends>
+   <header location="global">BotaoJogar.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
