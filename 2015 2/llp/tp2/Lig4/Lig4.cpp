@@ -12,13 +12,11 @@ Lig4::Lig4(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Lig4),
     restart(false),
-    jogadorDaVez(0)/*,
-    bolas  {{ui->bola11, ui->bola12, ui->bola13, ui->bola14, ui->bola15, ui->bola16, ui->bola17},
-            {ui->bola21, ui->bola22, ui->bola23, ui->bola24, ui->bola25, ui->bola26, ui->bola27},
-            {ui->bola31, ui->bola32, ui->bola33, ui->bola34, ui->bola35, ui->bola36, ui->bola37},
-            {ui->bola41, ui->bola42, ui->bola43, ui->bola44, ui->bola45, ui->bola46, ui->bola47},
-            {ui->bola51, ui->bola52, ui->bola53, ui->bola54, ui->bola55, ui->bola56, ui->bola57},
-            {ui->bola61, ui->bola62, ui->bola63, ui->bola64, ui->bola65, ui->bola66, ui->bola67}}*/
+    jogadorDaVez(0),
+    numLinhas(6),
+    numColunas(7),
+    pixmapBlue(":/blue"),
+    pixmapRed(":/red")
 {
     ui->setupUi(this);
 
@@ -54,45 +52,134 @@ Lig4::~Lig4()
     delete ui;
 }
 
+// Verifica se jogador venceu na linha
+bool Lig4::vencedorLinha(QPixmap jogador){
+    for (int l = 0; l < numLinhas; ++l) {
+        for (int c = 0; c < numColunas - 3; ++c) {
+            for (int k = 0; k < 4; ++k) {
+                if(bolas[l][c+k]->pixmap() == NULL)
+                    break;
+                if(bolas[l][c+k]->pixmap()->toImage() != jogador.toImage())
+                    break;
+                if(k == 3)
+                    return true;
+            }
+        }
+    }
+
+    return false;
+}
+
+// Verifica se jogador venceu na coluna
+bool Lig4::vencedorColuna(QPixmap jogador){
+    for (int l = 0; l < numLinhas - 3; ++l) {
+        for (int c = 0; c < numColunas; ++c) {
+            for (int k = 0; k < 4; ++k) {
+                if(bolas[l+k][c]->pixmap() == NULL)
+                    break;
+                if(bolas[l+k][c]->pixmap()->toImage() != jogador.toImage())
+                    break;
+                if(k == 3)
+                    return true;
+            }
+        }
+    }
+
+    return false;
+}
+
+bool Lig4::vencedorDiagonal(QPixmap jogador){
+    // Verifica diagonal principal
+    for (int l = 0; l < numLinhas - 3; ++l) {
+        for (int c = 0; c < numColunas - 3; ++c) {
+            for (int k = 0; k < 4; ++k) {
+                if(bolas[l+k][c+k]->pixmap() == NULL)
+                    break;
+                if(bolas[l+k][c+k]->pixmap()->toImage() != jogador.toImage())
+                    break;
+                if(k == 3)
+                    return true;
+            }
+        }
+    }
+
+    // Verifica diagonal secundária
+    for (int l = numLinhas-1; l > 2; l--) {
+        for (int c = 0; c < numColunas - 3; ++c) {
+            for (int k = 0; k < 4; ++k) {
+                if(bolas[l-k][c+k]->pixmap() == NULL)
+                    break;
+                if(bolas[l-k][c+k]->pixmap()->toImage() != jogador.toImage())
+                    break;
+                if(k == 3)
+                    return true;
+            }
+        }
+    }
+
+    return false;
+}
+
+// Verifica se jogador venceu
+int Lig4::vencedor(QPixmap jogador){
+    if(vencedorLinha(jogador))
+        return LINHA;
+    if(vencedorColuna(jogador))
+        return COLUNA;
+    if(vencedorDiagonal(jogador))
+        return DIAGONAL;
+    return SEM_VENCEDOR;
+}
+
 void Lig4::botaoClica(int coluna){
     int linha = qtdBolasNaColuna[coluna]++;
 
-    qDebug() << "Linha: " << linha;
-    qDebug() << "Coluna: " << coluna;
-
     // Cor do jogador da vez
-    QPixmap pixmapBlue(":/blue");
-    QPixmap pixmapRed(":/red");
-
-    QPixmap pixmap = jogadorDaVez ? pixmapBlue : pixmapRed;
-
-    // Alterna a vez
-    jogadorDaVez = !jogadorDaVez;
+    QPixmap pixmap= jogadorDaVez ? pixmapBlue : pixmapRed;
 
     // Faz Jogada
     bolas[linha][coluna]->setPixmap(pixmap);
 
-    // Verifica se coluna encheu
-    if(linha == 5)
+    // Alterna a vez
+    jogadorDaVez = !jogadorDaVez;
+
+    // Verifica se bolas na coluna atingiu limite
+    if(linha == numLinhas - 1)
         botoes[coluna]->setEnabled(false);
 
-    // Verifica se há vencedor
+    // Verifica se jogador da vez venceu o jogo
+    int teveVencedor = vencedor(pixmap);
+    QString msg = jogadorDaVez ? "Jogador Vermelho venceu na " : "Jogador Azul venceu na ";
+    switch(teveVencedor){
+        case LINHA: msg += "Linha"; break;
+        case COLUNA: msg += "Coluna"; break;
+        case DIAGONAL: msg += "Diagonal"; break;
+    }
 
-    // Verifica se há empate
+    // Verifica fim de jogo
+    bool fimDeJogo = false;
+    for (int i = 0; i < numColunas; ++i) {
+        if(qtdBolasNaColuna[i] < numLinhas)
+            break;
+        if(i+1 == numColunas){
+            msg = "O Jogo Empatou";
+            fimDeJogo = true;
+        }
+    }
 
+    // Desativa botões se houver vencedor
+    if(teveVencedor){
+        for (int i = 0; i < numColunas; ++i)
+            botoes[i]->setEnabled(false);
+    }
 
-    Termino termino;
-    if(bolas[1][1]->pixmap() != NULL){
-        if(bolas[1][1]->pixmap()->toImage() == pixmapBlue.toImage())
-            termino.setMsg("Azul ganhou!");
-        else
-            termino.setMsg("Vermelho ganhou!");
-
+    // Exibe mensagem de fim de jogo
+    if(teveVencedor || fimDeJogo){
+        Termino termino;
+        termino.setMsg(msg);
         termino.setModal(true);
         termino.exec();
     }
-
-
 }
 
 

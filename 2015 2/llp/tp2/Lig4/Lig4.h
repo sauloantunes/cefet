@@ -5,6 +5,8 @@
 #include <QLabel>
 #include <QPushButton>
 
+enum {SEM_VENCEDOR, LINHA, DIAGONAL, COLUNA};
+
 namespace Ui {
 class Lig4;
 }
@@ -22,9 +24,18 @@ private:
     Ui::Lig4 *ui;
     int tabuleiro[6][7];
     int jogadorDaVez;
+    int numLinhas;
+    int numColunas;
     int qtdBolasNaColuna[7];
     QLabel* bolas[6][7];
     QList<QPushButton*> botoes;
+
+    int vencedor(QPixmap jogador);
+    bool vencedorLinha(QPixmap jogador);
+    bool vencedorColuna(QPixmap jogador);
+    bool vencedorDiagonal(QPixmap jogador);
+    QPixmap pixmapBlue;
+    QPixmap pixmapRed;
 
 private slots:
     void botaoClica(int coluna);

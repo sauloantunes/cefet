@@ -16,8 +16,8 @@
   <widget class="QPushButton" name="sobre_ok">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>110</y>
+     <x>300</x>
+     <y>20</y>
      <width>80</width>
      <height>23</height>
     </rect>
@@ -29,24 +29,24 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>70</x>
+     <x>50</x>
      <y>40</y>
-     <width>191</width>
+     <width>231</width>
      <height>91</height>
     </rect>
    </property>
    <property name="text">
     <string>Saulo Antunes Silva
-    - sauloantuness@gmail.com
+      sauloantuness@gmail.com
 
 Thayana Pessoa Duarte
-    - thayane@email.com</string>
+      thayanepessoaduarte@gmail.com</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>70</x>
+     <x>50</x>
      <y>20</y>
      <width>59</width>
      <height>15</height>
