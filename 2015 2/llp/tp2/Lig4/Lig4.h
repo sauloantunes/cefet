@@ -5,7 +5,7 @@
 #include <QLabel>
 #include <QPushButton>
 
-enum {SEM_VENCEDOR, LINHA, DIAGONAL, COLUNA};
+enum {SEM_VENCEDOR, LINHA, DIAGONAL, COLUNA, DIAGONAL_SECUNDARIA};
 
 namespace Ui {
 class Lig4;
@@ -34,6 +34,7 @@ private:
     bool vencedorLinha(QPixmap jogador);
     bool vencedorColuna(QPixmap jogador);
     bool vencedorDiagonal(QPixmap jogador);
+    bool vencedorDiagonalSecundaria(QPixmap jogador);
     QPixmap pixmapBlue;
     QPixmap pixmapRed;
 

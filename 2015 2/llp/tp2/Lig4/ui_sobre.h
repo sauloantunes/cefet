@@ -56,7 +56,7 @@ public:
         label->setText(QApplication::translate("Sobre", "Saulo Antunes Silva\n"
 "      sauloantuness@gmail.com\n"
 "\n"
-"Thayana Pessoa Duarte\n"
+"Thayane Pessoa Duarte\n"
 "      thayanepessoaduarte@gmail.com", 0));
         label_2->setText(QApplication::translate("Sobre", "TP2 - LP", 0));
     } // retranslateUi

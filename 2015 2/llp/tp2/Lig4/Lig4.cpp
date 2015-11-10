@@ -88,8 +88,8 @@ bool Lig4::vencedorColuna(QPixmap jogador){
     return false;
 }
 
+// Verifica diagonal principal
 bool Lig4::vencedorDiagonal(QPixmap jogador){
-    // Verifica diagonal principal
     for (int l = 0; l < numLinhas - 3; ++l) {
         for (int c = 0; c < numColunas - 3; ++c) {
             for (int k = 0; k < 4; ++k) {
@@ -103,7 +103,11 @@ bool Lig4::vencedorDiagonal(QPixmap jogador){
         }
     }
 
-    // Verifica diagonal secundária
+    return false;
+}
+
+// Verifica diagonal secundária
+bool Lig4::vencedorDiagonalSecundaria(QPixmap jogador){
     for (int l = numLinhas-1; l > 2; l--) {
         for (int c = 0; c < numColunas - 3; ++c) {
             for (int k = 0; k < 4; ++k) {
@@ -128,6 +132,8 @@ int Lig4::vencedor(QPixmap jogador){
         return COLUNA;
     if(vencedorDiagonal(jogador))
         return DIAGONAL;
+    if(vencedorDiagonalSecundaria(jogador))
+        return DIAGONAL_SECUNDARIA;
     return SEM_VENCEDOR;
 }
 
@@ -154,6 +160,7 @@ void Lig4::botaoClica(int coluna){
         case LINHA: msg += "Linha"; break;
         case COLUNA: msg += "Coluna"; break;
         case DIAGONAL: msg += "Diagonal"; break;
+        case DIAGONAL_SECUNDARIA: msg += "Diagonal Secundaria"; break;
     }
 
     // Verifica fim de jogo
