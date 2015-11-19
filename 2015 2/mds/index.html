@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app='app' ng-controller='mainCtrl'>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Sistema X</title>
+	<link rel="stylesheet" href="static/assets/css/bootstrap.css">
+	<script src="static/assets/js/jquery-1.11.3.min.js"></script>
+	<script src="static/assets/js/bootstrap.js"></script>
+	<script src="static/assets/js/angular.min.js"></script>
+	<script src="static/assets/js/app.js"></script>
+</head>
+<body>
+	<div class="container">
+		
+		<div ng-include='"/static/pages/header.html"'></div>
+
+		<div class="row">
+
+			<div ng-include='"/static/pages/menu.html"'></div>
+			<div ng-include='"/static/pages/pedido.html"' ng-show='isPage("pedido")'></div>
+		 	<div ng-include='"/static/pages/pedidos.html"' ng-show='isPage("pedidos")'></div>
+
+		</div>
+	</div>
+	
+</body>
+</html>
