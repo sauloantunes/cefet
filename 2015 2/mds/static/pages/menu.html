@@ -1,9 +1,19 @@
 <div class="col-md-2">
 	<ul class="nav nav-pills nav-stacked">
-		<li ng-class="{active : isPage('pedidos')}"><a href="" ng-click="setPage('pedidos')">Pedidos</a></li>
-		<li ng-class="{active : isPage('calcados')}"><a href="" ng-click="setPage('calcados')">Calçados</a></li>
-		<li ng-class="{active : isPage('clientes')}"><a href="" ng-click="setPage('clientes')">Clientes</a></li>
-		<li ng-class="{active : isPage('vendedores')}"><a href="" ng-click="setPage('vendedores')">Vendedores</a></li>
-		<li ng-class="{active : isPage('configuracoes')}"><a href="" ng-click="setPage('configuracoes')">Configurações</a></li>
+		<li ng-class="{active : isPage('calcados')}">
+			<a href="" ng-click="setPage('calcados'); setSection('calcados')">Calçados</a>
+		</li>
+		<li ng-class="{active : isPage('clientes')}">
+			<a href="" ng-click="setPage('clientes'); setSection('clientes')">Clientes</a>
+		</li>
+		<li ng-class="{active : isPage('pedidos')}">
+			<a href="" ng-click="setPage('pedidos'); setSection('pedidos')">Pedidos</a>
+		</li>
+		<li ng-class="{active : isPage('vendedores')}">
+			<a href="" ng-click="setPage('vendedores'); setSection('vendedores')">Vendedores</a>
+		</li>
+		<li ng-class="{active : isPage('configuracoes')}">
+			<a href="" ng-click="setPage('configuracoes')">Configurações</a>
+		</li>
 	</ul>
 </div>
