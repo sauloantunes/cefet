@@ -9,4 +9,4 @@ nelementos([], 0).
 nelementos([X|L1], Y1)
 	:- nelementos(L1, Y), Y1 is Y+1.
 
-medio(L, X) :- soma(L, S), nelementos(L, Q), X is S/Q.
+medio(L, X) :- soma(L, S), nelementos(L, N), X is S/N.
