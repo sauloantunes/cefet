@@ -12,123 +12,55 @@
 						<input type="text" class="form-control">
 					</div>
 				</div>
-				
-				<div class="form-group">
-					<label for="" class="control-label col-md-2">Cor</label>
-					<div class="col-md-3">
-						<select class="form-control">
-							<option>Preto</option>
-							<option>Marron</option>
-						</select>
-					</div>
-				</div>
 
 				<div class="form-group">
-					<label for="" class="control-label col-md-2">Vendedor</label>
-					<div class="col-md-3">
-						<select class="form-control">
-							<option>João Paulo</option>
-							<option>José Ricardo</option>
-							<option>Maria Aparecida</option>
-						</select>
-					</div>
-				</div>
-
-				<div class="form-group">
-					<label for="" class="control-label col-md-2">Itens</label>
-					<div class="col-md-8">
-						<div class="row">
-							<div class="col-md-2">
-								<select class="form-control">
-									<option>Ref</option>
-									<option>010</option>
-									<option>020</option>
-								</select>									
-							</div>
-
-							<div class="col-md-2">
-								<select class="form-control">
-									<option>Num</option>
-									<option>40</option>
-									<option>41</option>
-									<option>42</option>
-								</select>									
-							</div>
-
-							<div class="col-md-2">
-								<select class="form-control">
-									<option>Qtd</option>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-									<option>6</option>
-								</select>
-							</div>
-
-							<div class="col-md-3">
-								<select class="form-control">
-									<option>Cor</option>
-									<option>Preto</option>
-									<option>Marrom</option>
-								</select>
-							</div>
-
-							<div class="col-md-2">
-								<button type="button" class="btn btn-success">Add</button>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="form-group">
-					<label for="" class="control-label col-md-2"></label>
-					<div class="col-md-8">
-						<table class="table">
-							<thead>
-								<tr>
-									<th class="col-md-1"></th>
-									<th>Ref</th>
-									<th>Qth</th>
-									<th>Num</th>
-									<th>Cor</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<span class="glyphicon glyphicon-remove"></span>
-									</td>
-									<td>010</td>
-									<td>10</td>
-									<td>41</td>
-									<td>Preto</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<!-- TextArea -->
-				<!-- <div class="form-group">
 					<label for="" class="control-label col-md-2">Descrição</label>
-					<div class="col-md-2">
+					<div class="col-md-4">
 						<textarea class="form-control" rows="3"></textarea>
 					</div>
-				</div> -->
-				
-				<!-- Input -->
-				<!-- <div class="form-group">
-					<label for="" class="control-label col-md-2">Nome</label>
-					<div class="col-md-2">
-						<input type="text" class="form-control">
+				</div>
+
+				<div class="form-group">
+					<label for="" class="control-label col-md-2">Solado</label>
+					<div class="col-md-4">
+						<select class="form-control" ng-model="solado" 
+								ng-options="solado.name for solado in solados">
+						</select>
 					</div>
-				</div> -->
+				</div>
+
+				<div class="form-group">
+					<label for="" class="control-label col-md-2">Fechamento</label>
+					<div class="col-md-4">
+						<select class="form-control"ng-model="fechamento" 
+								ng-options="fechamento.name for fechamento in fechamentos">
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="" class="control-label col-md-2">Palmilha</label>
+					<div class="col-md-4">
+						<select class="form-control"ng-model="palmilha" 
+								ng-options="palmilha.name for palmilha in palmilhas">
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="" class="control-label col-md-2">Tipo</label>
+					<div class="col-md-4">
+						<select class="form-control"ng-model="tipo" 
+								ng-options="tipo.name for tipo in tipos">
+						</select>
+					</div>
+				</div>
+
 				<div class="form-group">
 					<label for="" class="control-label col-md-2"></label>
 					<div class="col-md-8">
-						<a ng-click="setSection('pedidos')" class="btn btn-default">Cadastrar Pedido</a>
-						<a ng-click="setSection('pedidos')" class="btn btn-danger">Cancelar</a>
+						<a ng-click="setSection('calcados')" class="btn btn-success">Cadastrar Calçado</a>
+						<a ng-click="setSection('calcados')" class="btn btn-danger">Cancelar</a>
 					</div>
 				</div>
 
