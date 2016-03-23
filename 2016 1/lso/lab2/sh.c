@@ -104,15 +104,23 @@ runcmd(struct cmd *cmd)
      * TAREFA4: Implemente codigo abaixo para executar
      * comando com pipes. */
     pipe(p);
-    r = fork();
+    r = fork1();
+
+//      PARENT                       CHILD
+// STDIN ---- STDOUT            STDIN ---- STDOUT
+//               [W]------------[R]
+//                      PIPE
 
     if(r == 0){ // child
-      
+      dup2(p[0], STDIN_FILENO);   // usa a ponta de leitura do pipe como entrada padrão
+      close(p[1]);                // fecha a ponta de escrita
+      runcmd(pcmd->right);        // executa o comando da direita
     }
     else { // parent
+      dup2(STDOUT_FILENO, p[1]);  // coloca a saida padrão para escrever no pipe
+      close(p[0]);                // fecha a ponta de leitura
+      runcmd(pcmd->left);         // executa comando da esquerda
     }
-    
-    fprintf(stderr, "pipe nao implementado\n");
     /* MARK END task4 */
     break;
   }    
