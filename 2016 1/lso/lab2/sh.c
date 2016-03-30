@@ -106,9 +106,9 @@ runcmd(struct cmd *cmd)
     pipe(p);
     r = fork1();
 
-//      PARENT                       CHILD
+//      PARENT                        CHILD
 // STDIN ---- STDOUT            STDIN ---- STDOUT
-//               [W]------------[R]
+//             [W-1]------------[R-0]
 //                      PIPE
 
     if(r == 0){ // child
@@ -117,7 +117,7 @@ runcmd(struct cmd *cmd)
       runcmd(pcmd->right);        // executa o comando da direita
     }
     else { // parent
-      dup2(STDOUT_FILENO, p[1]);  // coloca a saida padrão para escrever no pipe
+      dup2(p[1], STDOUT_FILENO);  // coloca a saida padrão para escrever no pipe
       close(p[0]);                // fecha a ponta de leitura
       runcmd(pcmd->left);         // executa comando da esquerda
     }

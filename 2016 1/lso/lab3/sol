@@ -1,0 +1,48 @@
+Main: criando thread 00
+Main: criando thread 01
+Main: criando thread 02
+t01: Olá!
+Main: criando thread 03
+t00: Olá!
+t02: Olá!
+Main: criando thread 04
+t03: Olá!
+Main: criando thread 05
+Main: criando thread 06
+t05: Olá!
+Main: criando thread 07
+t06: Olá!
+t04: Olá!
+Main: criando thread 08
+t07: Olá!
+Main: criando thread 09
+Main: criando thread 10
+t08: Olá!
+Main: criando thread 11
+t09: Olá!
+t10: Olá!
+Main: criando thread 12
+t11: Olá!
+Main: criando thread 13
+t12: Olá!
+Main: criando thread 14
+t13: Olá!
+Main: criando thread 15
+t14: Olá!
+t15: Olá!
+t02: Tchau!
+t04: Tchau!
+t05: Tchau!
+t03: Tchau!
+t13: Tchau!
+t08: Tchau!
+t06: Tchau!
+t01: Tchau!
+t09: Tchau!
+t14: Tchau!
+t07: Tchau!
+t10: Tchau!
+t11: Tchau!
+t12: Tchau!
+t00: Tchau!
+t15: Tchau!
