@@ -2,7 +2,7 @@
 
 using namespace std;
 
-#define QUANTUM 3
+#define QUANTUM 2
 
 enum estados {NOVO, PRONTO, EXECUTANDO, FINALIZADO};
 
@@ -202,21 +202,18 @@ bool RRPE(){
 }
 
 int main(){
-	int n;
-	cin >> n;
+	processo p;
 
-	for (int i = 0; i < n; ++i) {
-		processo p;
-		p.id = i;
+	while(cin >> p.inicio >> p.duracao >> p.prioridade) {
+		p.id = processos.size();
 		p.executado = 0;
-		cin >> p.inicio >> p.duracao >> p.prioridade;
 		processos.push_back(p);
 	}
 
 	imprimeCabecalho();
 
 	// [FCFS, SJF, SRTF, P, PP, RR, RRPE]
-	while(P()){
+	while(SJF()){
 		imprimeProcessos();
 		tempo++;
 	}
